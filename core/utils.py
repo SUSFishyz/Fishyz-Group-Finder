@@ -80,12 +80,12 @@ def send_webhook(url, **kwargs):
 
 def make_embed(group_info, date):
     return dict(
-        title="Found claimable group",
+        title="Encontre Un Grupo Toma",
         url=f"https://www.roblox.com/groups/{group_info['id']}",
         fields=[
-            dict(name="Group ID", value=group_info["id"]),
-            dict(name="Group Name", value=group_info["name"]),
-            dict(name="Group Members", value=group_info["memberCount"])
+            dict(name="ID Del Grupo", value=group_info["id"]),
+            dict(name="Nombre Del Grupo", value=group_info["name"]),
+            dict(name="Miembros En El Grupo", value=group_info["memberCount"])
         ],
         footer=dict(
             text=EMBED_FOOTER_TEXT
